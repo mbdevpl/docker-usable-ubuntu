@@ -10,7 +10,7 @@ RUN apt update
 RUN apt dist-upgrade
 
 RUN apt install -y curl wget
-RUN apt install -y screen vim apt-file dos2unix unrar
+RUN apt install -y screen vim apt-file dos2unix unrar iproute2
 RUN apt install -y git
 RUN apt install -y fonts-ipafont
 
@@ -91,5 +91,7 @@ RUN ruby --version
 #
 
 WORKDIR /root
+
+RUN echo "ip address" > .bash_history
 
 ENTRYPOINT ["/bin/bash"]
