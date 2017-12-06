@@ -9,8 +9,15 @@ MAINTAINER Mateusz Bysiek <mateusz.bysiek.spam@gmail.com>
 RUN apt update
 RUN apt dist-upgrade
 
-RUN apt install -y curl
-RUN apt install -y wget
+RUN apt install -y curl wget
+RUN apt install -y screen vim apt-file dos2unix unrar
+RUN apt install -y git
+RUN apt install -y fonts-ipafont
+
+RUN apt install -y software-properties-common
+
+RUN apt install -y build-essential libssl-dev libffi-dev
+RUN apt install -y libhdf5-dev libtag1-dev
 
 #
 # GCC 7
@@ -47,7 +54,6 @@ RUN clang++ --version
 # Python 3.6
 #
 
-RUN apt install -y build-essential libssl-dev libffi-dev
 RUN apt install -y python3.6 python3.6-dev
 
 RUN update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 10
