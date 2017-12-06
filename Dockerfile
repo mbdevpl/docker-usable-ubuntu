@@ -68,6 +68,8 @@ RUN pip3.6 --version
 
 RUN apt install -y openjdk-9-jdk ca-certificates-java
 
+RUN java -version
+
 #
 #
 #
