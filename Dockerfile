@@ -49,15 +49,17 @@ RUN clang++ --version
 
 RUN apt install -y python3.6
 
-#RUN python --version
-#RUN python3 --version
+RUN update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 10
+
+RUN python --version || echo "not available"
+RUN python3 --version
 RUN python3.6 --version
 
 RUN curl https://bootstrap.pypa.io/get-pip.py | python3.6
 RUN pip3.6 install -U pip setuptools wheel twine
 
-#RUN pip --version
-#RUN pip3 --version
+RUN pip --version || echo "not available"
+RUN pip3 --version
 RUN pip3.6 --version
 
 #
