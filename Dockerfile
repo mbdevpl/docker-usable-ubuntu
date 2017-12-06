@@ -40,6 +40,7 @@ RUN gfortran --version
 #
 
 RUN wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | apt-key add -
+RUN add-apt-repository "deb http://apt.llvm.org/artful/ llvm-toolchain-artful-5.0 main"
 RUN apt update && apt install -y llvm-5.0 clang-5.0 lldb-5.0
 
 RUN update-alternatives --install /usr/bin/llvm-config llvm-config /usr/bin/llvm-config-5.0 50
@@ -80,5 +81,7 @@ RUN java -version
 #
 #
 #
+
+WORKDIR /root
 
 ENTRYPOINT ["/bin/bash"]
