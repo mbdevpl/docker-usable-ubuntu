@@ -75,4 +75,4 @@ RUN java -version
 #
 #
 
-CMD ["bin", "bash"]
+ENTRYPOINT ["/bin/bash"]
