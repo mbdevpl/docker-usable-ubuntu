@@ -79,6 +79,14 @@ RUN apt install -y openjdk-9-jdk ca-certificates-java
 RUN java -version
 
 #
+# Ruby
+#
+
+RUN apt install -y ruby ruby-dev
+
+RUN ruby --version
+
+#
 #
 #
 

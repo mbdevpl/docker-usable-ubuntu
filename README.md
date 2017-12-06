@@ -8,5 +8,6 @@ Current stack:
 * LLVM 5.0
 * Python 3.6
 * Open JDK 9
+* Ruby
 
 See the [Dockerfile](Dockerfile) and [latest build logs](https://cloud.docker.com/app/mbdevpl/repository/docker/mbdevpl/usable-ubuntu/builds) for details.
