@@ -22,6 +22,9 @@ RUN apt install -y libhdf5-dev libhdf5-mpi-dev
 RUN apt install -y libtag1-dev
 RUN apt install -y sudo
 
+RUN adduser --shell /bin/bash --disabled-password --gecos "" --home /home/user user
+RUN usermod -aG sudo user
+
 #
 # GCC 7
 #
@@ -96,5 +99,7 @@ RUN ruby --version
 WORKDIR /root
 
 RUN echo "ip address" > .bash_history
+
+RUN install -g user -o user .bash_history /home/user/.bash_history
 
 ENTRYPOINT ["/bin/bash"]
