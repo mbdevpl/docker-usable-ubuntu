@@ -17,7 +17,10 @@ RUN apt install -y fonts-ipafont
 RUN apt install -y software-properties-common
 
 RUN apt install -y build-essential libssl-dev libffi-dev
-RUN apt install -y libhdf5-dev libtag1-dev
+RUN apt install -y openmpi-bin libopenmpi-dev
+RUN apt install -y libhdf5-dev libhdf5-mpi-dev
+RUN apt install -y libtag1-dev
+RUN apt install -y sudo
 
 #
 # GCC 7
