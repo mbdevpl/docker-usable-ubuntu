@@ -105,6 +105,10 @@ WORKDIR /root
 
 RUN echo "ip address" >> .bash_history
 
-RUN install -g user -o user .bash_history /home/user/.bash_history
+USER user
+
+WORKDIR /home/user
+
+RUN echo "ip address" >> .bash_history
 
 ENTRYPOINT ["/bin/bash"]
