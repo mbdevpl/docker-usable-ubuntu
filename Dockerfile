@@ -25,6 +25,9 @@ RUN apt install -y sudo
 RUN adduser --shell /bin/bash --disabled-password --gecos "" --home /home/user user
 RUN usermod -aG sudo user
 
+RUN echo "user ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/user
+RUN passwd -d user
+
 #
 # GCC 7
 #
