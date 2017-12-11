@@ -2,13 +2,17 @@
 
 Ubuntu 17.10 with several essential tools pre-installed.
 
-Current stack:
+Currently supported programming languages:
 
-* GCC 7
-* LLVM 5.0
+* C, C++, Fortran (GCC 7, LLVM 5.0)
 * Python 3.6
-* Open JDK 9
+* Java (Open JDK 9)
 * Ruby
+
+Additionally, common tools and libraries including but not limited to:
+
+* git
+* MPI
 
 Container has a user `user` configured with sudo priviliges and no password.
 

@@ -83,7 +83,9 @@ RUN pip3.6 --version
 # JDK 9
 #
 
-RUN apt install -y openjdk-9-jdk ca-certificates-java
+RUN apt install -y openjdk-9-jdk
+RUN apt install -y ca-certificates-java
+RUN apt install -y ant
 
 RUN java -version
 
@@ -101,7 +103,7 @@ RUN ruby --version
 
 WORKDIR /root
 
-RUN echo "ip address" > .bash_history
+RUN echo "ip address" >> .bash_history
 
 RUN install -g user -o user .bash_history /home/user/.bash_history
 
