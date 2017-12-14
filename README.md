@@ -1,6 +1,12 @@
 # Usable Ubuntu
 
-Ubuntu 17.10 with several essential tools pre-installed.
+Ubuntu with several essential tools pre-installed.
+
+Currently maintained Docker tags (with corresponding Ubuntu versions):
+
+* [16.04](https://github.com/mbdevpl/docker-usable-ubuntu/tree/16.04)
+* [17.10](https://github.com/mbdevpl/docker-usable-ubuntu/tree/17.10)
+* [latest](https://github.com/mbdevpl/docker-usable-ubuntu/tree/latest) is 17.10
 
 Currently supported programming languages:
 
@@ -16,4 +22,6 @@ Additionally, common tools and libraries including but not limited to:
 
 Container has a user `user` configured with sudo priviliges and no password.
 
-See the [Dockerfile](Dockerfile) and [latest build logs](https://cloud.docker.com/app/mbdevpl/repository/docker/mbdevpl/usable-ubuntu/builds) for details.
+See the [contents of the repository](https://github.com/mbdevpl/docker-usable-ubuntu)
+and [latest build logs](https://cloud.docker.com/app/mbdevpl/repository/docker/mbdevpl/usable-ubuntu/builds)
+for details.
