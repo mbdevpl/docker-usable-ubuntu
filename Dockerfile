@@ -23,6 +23,6 @@ RUN cat bash_history.sh >> /root/.bash_history
 
 USER user
 
-RUN cat bash_history.sh >> /home/user/.bash_history
+RUN cat bash_history_user.sh >> /home/user/.bash_history
 
 ENTRYPOINT ["/bin/bash"]
