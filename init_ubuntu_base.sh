@@ -1,12 +1,14 @@
 #!/bin/bash
 
-echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
+echo "debconf debconf/frontend select Noninteractive" | debconf-set-selections
 
 apt update
 apt dist-upgrade -y
 
+apt install -y apt-utils
 apt install -y lsb-release
 
+UBUNTU_RELEASE="$(lsb_release -rs)"
 UBUNTU_CODENAME="$(lsb_release -cs)"
 
 #
@@ -48,6 +50,10 @@ apt install -y build-essential libssl-dev libffi-dev
 
 # GCC 7
 
+if [[ "${UBUNTU_RELEASE}" == "16.04" ]] ; then
+  add-apt-repository ppa:jonathonf/gcc-7.1 && apt update
+fi
+
 apt install -y cpp-7 gcc-7 g++-7 gfortran-7
 
 update-alternatives --install /usr/bin/cpp cpp /usr/bin/cpp-7 70
@@ -81,6 +87,10 @@ apt install -y libncurses5-dev libncursesw5-dev libreadline6-dev
 apt install -y zlib1g-dev liblzma-dev libbz2-dev
 apt install -y libdb5.3-dev # Python 2.7
 
+if [[ "${UBUNTU_RELEASE}" == "16.04" ]] ; then
+  add-apt-repository ppa:deadsnakes/ppa && apt-get update
+fi
+
 apt install -y python3.6 python3.6-dev
 
 update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 36
@@ -98,7 +108,13 @@ pip3.6 --version
 
 # JDK 9
 
-apt install -y openjdk-9-jdk ca-certificates-java ant
+if [[ "${UBUNTU_RELEASE}" == "16.04" ]] ; then
+  apt -o Dpkg::Options::="--force-overwrite" install openjdk-9-jdk
+else
+  apt install -y openjdk-9-jdk
+fi
+
+apt install -y ca-certificates-java ant
 
 java -version
 
