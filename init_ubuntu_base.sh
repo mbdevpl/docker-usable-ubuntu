@@ -5,7 +5,7 @@ echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
 apt update
 apt dist-upgrade -y
 
-sudo apt install -y lsb-release
+apt install -y lsb-release
 
 UBUNTU_CODENAME="$(lsb_release -cs)"
 
