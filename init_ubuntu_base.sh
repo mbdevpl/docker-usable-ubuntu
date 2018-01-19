@@ -110,7 +110,7 @@ pip3.6 --version
 # JDK 9
 
 if [[ "${UBUNTU_RELEASE}" == "16.04" ]] ; then
-  apt -o Dpkg::Options::="--force-overwrite" install openjdk-9-jdk
+  apt -o Dpkg::Options::="--force-overwrite" install -y openjdk-9-jdk
 else
   apt install -y openjdk-9-jdk
 fi
