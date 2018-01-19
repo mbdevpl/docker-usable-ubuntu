@@ -47,6 +47,7 @@ apt install -y fonts-ipafont # CJK fonts: IPAMincho IPAPMincho
 apt install -y git
 apt install -y doxygen
 apt install -y build-essential libssl-dev libffi-dev
+apt install -y cmake
 
 # GCC 7
 
