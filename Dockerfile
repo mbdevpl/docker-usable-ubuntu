@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM nvidia/cuda:10.2-devel-ubuntu18.04
 
 MAINTAINER Mateusz Bysiek <mateusz.bysiek.spam@gmail.com>
 
