@@ -11,10 +11,11 @@ WORKDIR /root/Projects/docker-usable-ubuntu
 #
 
 RUN bash init_ubuntu_base.sh
+
 RUN bash init_ubuntu_base_user.sh
 
 #
-#
+# initialize bash history
 #
 
 USER root
