@@ -29,11 +29,14 @@ RUN git config --global user.name "Ubuntu User"
 #
 
 USER root
+WORKDIR /root/Projects/docker-usable-ubuntu
 
 RUN cat bash_history.sh >> /root/.bash_history
 
 USER user
 
 RUN cat bash_history_user.sh >> /home/user/.bash_history
+
+WORKDIR /home/user
 
 ENTRYPOINT ["/bin/bash"]

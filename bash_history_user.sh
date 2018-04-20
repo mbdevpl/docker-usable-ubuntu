@@ -3,6 +3,7 @@ sudo apt dist-upgrade
 sudo reboot && exit
 exit
 sudo dpkg-reconfigure locales
+sudo su - root
 ip address
 git remote -v
 git branch -vav
