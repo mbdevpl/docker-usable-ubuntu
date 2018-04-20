@@ -15,6 +15,16 @@ RUN bash init_ubuntu_base.sh
 RUN bash init_ubuntu_base_user.sh
 
 #
+# configure git for local usage
+#
+
+USER user
+WORKDIR /home/user
+
+RUN git config --global user.email "ubuntu-user@example.com"
+RUN git config --global user.name "Ubuntu User"
+
+#
 # initialize bash history
 #
 
