@@ -98,6 +98,7 @@ apt install -y python3.6 python3.6-dev
 update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 36
 
 python --version || echo "not available"
+python2 --version || echo "not available"
 python3 --version
 python3.6 --version
 
@@ -105,6 +106,7 @@ curl https://bootstrap.pypa.io/get-pip.py | python3.6
 pip3.6 install -U pip setuptools wheel twine
 
 pip --version || echo "not available"
+pip2 --version || echo "not available"
 pip3 --version
 pip3.6 --version
 
