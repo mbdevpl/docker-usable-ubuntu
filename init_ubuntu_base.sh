@@ -102,7 +102,13 @@ python2 --version || echo "not available"
 python3 --version
 python3.6 --version
 
-curl https://bootstrap.pypa.io/get-pip.py | python3.6
+if [[ "${UBUNTU_RELEASE}" == "16.04" ]] ; then
+  curl https://bootstrap.pypa.io/get-pip.py | python3.6
+else
+  apt install -y python3-pip
+  update-alternatives --install /usr/bin/pip3.6 pip3.6 /usr/bin/pip3 36
+fi
+
 pip3.6 install -U pip setuptools wheel twine
 
 pip --version || echo "not available"
