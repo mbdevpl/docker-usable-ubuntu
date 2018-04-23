@@ -1,4 +1,5 @@
 #!/bin/bash
+set -Eeuxo pipefail
 
 UBUNTU_CODENAME="$(lsb_release -cs)"
 

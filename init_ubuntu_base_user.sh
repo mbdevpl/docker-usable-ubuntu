@@ -1,4 +1,5 @@
 #!/bin/bash
+set -Eeuxo pipefail
 
 adduser --shell /bin/bash --disabled-password --gecos "" --home /home/user user
 usermod -aG sudo user

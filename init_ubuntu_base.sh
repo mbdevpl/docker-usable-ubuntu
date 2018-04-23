@@ -1,4 +1,5 @@
 #!/bin/bash
+set -Eeuxo pipefail
 
 echo "debconf debconf/frontend select Noninteractive" | debconf-set-selections
 
