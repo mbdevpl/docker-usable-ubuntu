@@ -38,6 +38,7 @@ apt install -y unrar
 #
 
 apt install -y vim
+apt install -y nano
 apt install -y dos2unix
 apt install -y fonts-ipafont # CJK fonts: IPAMincho IPAPMincho
 
