@@ -117,12 +117,12 @@ pip2 --version || echo "not available"
 pip3 --version
 pip3.6 --version
 
-# JDK 9
+# JDK 9 (on 16.04) or JDK 11 (on 18.04)
 
 if [[ "${UBUNTU_RELEASE}" == "16.04" ]] ; then
   apt -o Dpkg::Options::="--force-overwrite" install -y openjdk-9-jdk
 else
-  apt install -y openjdk-9-jdk
+  apt install -y openjdk-11-jdk
 fi
 
 apt install -y ca-certificates-java ant

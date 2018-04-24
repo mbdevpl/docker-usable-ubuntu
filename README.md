@@ -20,7 +20,7 @@ Currently supported programming languages:
 
 * C, C++, Fortran (GCC 7, LLVM 5.0)
 * Python 3.6
-* Java (Open JDK 9)
+* Java (Open JDK 9 on 16.04 and 11 on 18.04)
 * Ruby
 
 Additionally, common tools and libraries including but not limited to:
