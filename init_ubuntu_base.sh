@@ -95,25 +95,27 @@ fi
 
 apt install -y python3.6 python3.6-dev
 
-update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 36
+if [[ "${UBUNTU_RELEASE}" == "18.04" ]] ; then
+  apt install -y python3-dev
+fi
+
+if [[ "${UBUNTU_RELEASE}" == "16.04" ]] ; then
+  update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 36
+fi
 
 python --version || echo "not available"
 python2 --version || echo "not available"
 python3 --version
-python3.6 --version || echo "not available"
+python3.6 --version
 
-if [[ "${UBUNTU_RELEASE}" == "16.04" ]] ; then
-  curl https://bootstrap.pypa.io/get-pip.py | python3
-else
-  apt install -y python3-pip
-fi
+curl https://bootstrap.pypa.io/get-pip.py | python3
 
 pip3 install -U pip setuptools wheel twine
 
 pip --version || echo "not available"
 pip2 --version || echo "not available"
 pip3 --version
-pip3.6 --version || echo "not available"
+pip3.6 --version
 
 # JDK 9
 
