@@ -137,6 +137,12 @@ apt install -y ruby ruby-dev
 ruby --version
 
 #
+# env modules
+#
+
+apt install -y environment-modules
+
+#
 # science
 #
 

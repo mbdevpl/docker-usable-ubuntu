@@ -2,6 +2,8 @@ FROM ubuntu:latest
 
 MAINTAINER Mateusz Bysiek <mateusz.bysiek.spam@gmail.com>
 
+SHELL ["/bin/bash", "--login", "-c"]
+
 USER root
 COPY . /root/Projects/docker-usable-ubuntu
 WORKDIR /root/Projects/docker-usable-ubuntu
@@ -39,4 +41,4 @@ RUN cat bash_history_user.sh >> /home/user/.bash_history
 
 WORKDIR /home/user
 
-ENTRYPOINT ["/bin/bash"]
+ENTRYPOINT ["/bin/bash", "--login"]
