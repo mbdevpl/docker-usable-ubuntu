@@ -84,6 +84,15 @@ add-apt-repository "deb http://archive.getdeb.net/ubuntu ${UBUNTU_CODENAME}-getd
 apt install -y synergy
 
 #
+# comfort
+#
+
+apt install -y redshift
+
+sudo add-apt-repository ppa:slgobinath/safeeyes && apt update
+apt install -y safeeyes
+
+#
 # science
 #
 
