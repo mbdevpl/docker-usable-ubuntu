@@ -12,9 +12,13 @@ WORKDIR /root/Projects/docker-usable-ubuntu
 #
 #
 
-RUN bash init_ubuntu_base.sh
-
-RUN bash init_ubuntu_base_user.sh
+RUN bash init_ubuntu_docker.sh && \
+  bash init_ubuntu_base.sh && \
+  bash init_ubuntu_base_user.sh && \
+  bash init_gcc.sh && \
+  bash init_llvm.sh && \
+  bash init_jdk.sh && \
+  bash init_python.sh
 
 #
 # configure git for local usage
