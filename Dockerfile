@@ -18,7 +18,9 @@ RUN bash init_ubuntu_docker.sh && \
   bash init_gcc.sh && \
   bash init_llvm.sh && \
   bash init_jdk.sh && \
-  bash init_python.sh
+  bash init_python.sh && \
+  bash init_python_packages.sh
+
 
 #
 # configure git for local usage
