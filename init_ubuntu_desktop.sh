@@ -107,6 +107,10 @@ apt install -y speedcrunch
 add-apt-repository ppa:atareao/telegram && apt update
 apt install -y telegram
 
+# Slack
+
+snap install slack --classic
+
 #
 # audio
 #

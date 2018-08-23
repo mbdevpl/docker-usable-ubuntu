@@ -5,49 +5,45 @@ UBUNTU_RELEASE="$(lsb_release -rs)"
 UBUNTU_CODENAME="$(lsb_release -cs)"
 
 #
-#
+# essential
 #
 
-apt install -y software-properties-common
+apt install --no-install-recommends -y software-properties-common
+apt install --no-install-recommends -y sudo
 
 #
 # system utilities
 #
 
-apt install -y screen
-apt install -y iproute2
-apt install -y sudo
+apt install --no-install-recommends -y screen
+apt install --no-install-recommends -y iproute2
 
 #
 # files
 #
 
-apt install -y curl wget
-apt install -y unrar
-
-#
-# text, documents
-#
-
-apt install -y vim
-apt install -y nano
-apt install -y dos2unix
-apt install -y fonts-ipafont # CJK fonts: IPAMincho IPAPMincho
+apt install --no-install-recommends -y curl
+apt install --no-install-recommends -y wget
+apt install --no-install-recommends -y unrar
 
 #
 # software development
 #
 
-apt install -y git
-apt install -y doxygen
-apt install -y build-essential libssl-dev libffi-dev
-apt install -y cmake
+apt install --no-install-recommends -y git
 
 #
 # env modules
 #
 
-apt install -y environment-modules
+apt install --no-install-recommends -y tcl
+apt install --no-install-recommends -y environment-modules
+
+#
+# security
+#
+
+apt install --no-install-recommends -y gnupg-agent
 
 #
 # science

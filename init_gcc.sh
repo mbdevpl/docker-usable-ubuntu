@@ -10,7 +10,7 @@ if [[ "${UBUNTU_RELEASE}" == "16.04" ]] ; then
   add-apt-repository ppa:jonathonf/gcc-7.1 && apt update
 fi
 
-apt install -y cpp-7 gcc-7 g++-7 gfortran-7
+apt install --no-install-recommends -y cpp-7 gcc-7 g++-7 gfortran-7
 
 update-alternatives --install /usr/bin/cpp cpp /usr/bin/cpp-7 70
 update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 70

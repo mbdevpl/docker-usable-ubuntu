@@ -6,5 +6,5 @@ echo "debconf debconf/frontend select Noninteractive" | debconf-set-selections
 apt update
 apt dist-upgrade -y
 
-apt install -y apt-utils
-apt install -y lsb-release
+apt install --no-install-recommends -y apt-utils
+apt install --no-install-recommends -y lsb-release
