@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:18.10
 
 MAINTAINER Mateusz Bysiek <mateusz.bysiek.spam@gmail.com>
 
