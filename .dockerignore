@@ -1,7 +1,9 @@
-/.git
 
 # OS: macOS
 .DS_Store
 
 # OS: Windows
 desktop.ini
+
+# other
+/.git

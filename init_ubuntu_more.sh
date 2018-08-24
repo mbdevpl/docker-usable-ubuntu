@@ -17,7 +17,6 @@ apt install --no-install-recommends -y fonts-ipafont # CJK fonts: IPAMincho IPAP
 # software development
 #
 
-apt install --no-install-recommends -y git
 apt install --no-install-recommends -y build-essential
 apt install --no-install-recommends -y cmake
 
