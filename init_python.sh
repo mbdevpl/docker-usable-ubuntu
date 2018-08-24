@@ -33,8 +33,6 @@ python3.6 --version
 
 curl https://bootstrap.pypa.io/get-pip.py | python3
 
-pip3 install -U pip setuptools wheel twine
-
 pip --version || echo "not available"
 pip2 --version || echo "not available"
 pip3 --version

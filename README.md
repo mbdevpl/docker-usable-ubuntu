@@ -43,6 +43,20 @@ Not installed by default, but also easily available:
 * LaTeX (texlive 2018) -- run `/opt/usable-ubuntu/init_texlive.sh` to install
 
 
+### Python packages
+
+Python comes with many useful packages pre-installed for convenience.
+
+The feature categories include but aren't limited to:
+
+* debugging (ipdb)
+* code analysis (coverage, mypy, pylint, ...)
+* parsing, compilation and code generation (numba, Cython, astunparse, typed_ast, ...)
+* interactive interfaces (ipython, notebook, ...)
+* numerics and data science (numpy, scipy, pandas, matplotlib, ...)
+* machine learning (scikit-learn, chainer, keras)
+
+
 ### Tools
 
 Additionally, common tools and libraries including but not limited to:
