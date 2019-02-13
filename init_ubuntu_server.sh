@@ -25,6 +25,14 @@ apt install -y autossh
 #
 #
 
-apt install -y letsencrypt
 apt install -y nginx
 apt install -y davical
+
+# Let's Encrypt
+
+apt install -y letsencrypt
+apt add-apt-repository ppa:certbot/certbot
+apt-get install -y python-certbot-nginx
+
+# set up all relevant domains
+certbot --nginx certonly
