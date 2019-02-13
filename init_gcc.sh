@@ -4,18 +4,14 @@ set -Eeuxo pipefail
 UBUNTU_RELEASE="$(lsb_release -rs)"
 UBUNTU_CODENAME="$(lsb_release -cs)"
 
-# GCC 7
+# GCC 8
 
-if [[ "${UBUNTU_RELEASE}" == "16.04" ]] ; then
-  add-apt-repository ppa:jonathonf/gcc-7.1 && apt update
-fi
+apt-get install --no-install-recommends -y cpp-8 gcc-8 g++-8 gfortran-8
 
-apt-get install --no-install-recommends -y cpp-7 gcc-7 g++-7 gfortran-7
-
-update-alternatives --install /usr/bin/cpp cpp /usr/bin/cpp-7 70
-update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 70
-update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-7 70
-update-alternatives --install /usr/bin/gfortran gfortran /usr/bin/gfortran-7 70
+update-alternatives --install /usr/bin/cpp cpp /usr/bin/cpp-8 80
+update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-8 80
+update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-8 80
+update-alternatives --install /usr/bin/gfortran gfortran /usr/bin/gfortran-8 80
 
 cpp --version
 gcc --version
