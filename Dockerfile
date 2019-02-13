@@ -4,6 +4,8 @@ MAINTAINER Mateusz Bysiek <mateusz.bysiek.spam@gmail.com>
 
 SHELL ["/bin/bash", "--login", "-c"]
 
+ARG APT_MIRROR=us
+
 USER root
 COPY . /opt/usable-ubuntu
 WORKDIR /opt/usable-ubuntu
