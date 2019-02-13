@@ -9,9 +9,9 @@ UBUNTU_CODENAME="$(lsb_release -cs)"
 if [[ "${UBUNTU_RELEASE}" == "16.04" ]] ; then
   apt -o Dpkg::Options::="--force-overwrite" install --no-install-recommends -y openjdk-9-jdk
 else
-  apt install --no-install-recommends -y openjdk-11-jdk
+  apt-get install --no-install-recommends -y openjdk-11-jdk
 fi
 
-apt install --no-install-recommends -y ca-certificates-java ant
+apt-get install --no-install-recommends -y ca-certificates-java ant
 
 java -version

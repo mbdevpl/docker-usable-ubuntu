@@ -6,7 +6,7 @@ UBUNTU_CODENAME="$(lsb_release -cs)"
 
 # usual texlive
 
-# apt install -y texlive biber texlive-music texlive-lang-polish texlive-lang-french texlive-lang-cjk
+# apt-get install --no-install-recommends -y texlive biber texlive-music texlive-lang-polish texlive-lang-french texlive-lang-cjk
 
 # texlive from source
 

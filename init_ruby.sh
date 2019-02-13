@@ -6,6 +6,6 @@ UBUNTU_CODENAME="$(lsb_release -cs)"
 
 # Ruby
 
-apt install --no-install-recommends -y ruby ruby-dev
+apt-get install --no-install-recommends -y ruby ruby-dev
 
 ruby --version

@@ -31,7 +31,7 @@ RUN bash init_ubuntu_docker.sh && \
   # bash init_texlive.sh && \
   bash init_python_packages.sh && \
   # bash init_python_packages_extra.sh && \
-  apt clean && \
+  apt-get clean && \
   rm -rf /var/lib/apt/lists/* && \
   cat bash_history.sh >> /root/.bash_history && \
   cat bash_history_user.sh >> /home/user/.bash_history
