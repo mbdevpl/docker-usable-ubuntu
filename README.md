@@ -21,8 +21,15 @@ No longer maintained tags:
 * [16.04](https://github.com/mbdevpl/docker-usable-ubuntu/tree/16.04)
 * [17.10](https://github.com/mbdevpl/docker-usable-ubuntu/tree/17.10)
 
+See the [Docker Hub repository](https://hub.docker.com/r/mbdevpl/usable-ubuntu/) for details.
+
 
 ## Features
+
+Looking through the
+[latest build logs](https://cloud.docker.com/repository/docker/mbdevpl/usable-ubuntu/builds)
+reveals the detailed information about all features.
+Viewing the logs, however, requires Docker Hub ID. Below is the general overview of the features.
 
 Container has two users:
 
@@ -74,13 +81,10 @@ Additionally, common tools and libraries including but not limited to:
 * cmake
 * doxygen
 
-See the [contents of the GitHub repository](https://github.com/mbdevpl/docker-usable-ubuntu)
-and [latest Docker Cloud build logs](https://cloud.docker.com/swarm/mbdevpl/repository/docker/mbdevpl/usable-ubuntu/builds)
-for details of all features.
-
 
 ## Contributing
 
 Contributions of any kind are welcome.
-Please open GitHub issues and/or submit pull requests if you see some problem with the images
-and/or wish something changed.
+Please open issues and/or submit pull requests
+in the [GitHub repository](https://github.com/mbdevpl/docker-usable-ubuntu) of the project
+if you see some problem with the images and/or wish something changed.
