@@ -22,6 +22,10 @@ pip3 install PyOpenGL-accelerate
 pip3 install PyLaTeX
 pip3 install Pygments
 
+# Jupyter notebook extensions
+pip3 install nbextensions
+pip3 install jupyter_contrib_nbextensions
+
 # project/configuration management
 pip3 install encrypted-config
 pip3 install ingit

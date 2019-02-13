@@ -92,7 +92,5 @@ pip3 install ipython
 pip3 install jupyter
 pip3 install notebook
 pip3 install ipyparallel
-pip3 install nbextensions
-pip3 install jupyter_contrib_nbextensions
 
 pip3 freeze
