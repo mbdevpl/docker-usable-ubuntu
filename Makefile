@@ -45,7 +45,7 @@ latest:
 	time sudo docker push mbdevpl/usable-ubuntu:19.04
 
 clean:
-	sudo docker image rm mbdevpl/usable-ubuntu:18.04
-	sudo docker image rm mbdevpl/usable-ubuntu:latest
-	sudo docker image rm mbdevpl/usable-ubuntu:18.10
-	sudo docker image rm mbdevpl/usable-ubuntu:19.04
+	sudo docker image rm mbdevpl/usable-ubuntu:18.04 || :
+	sudo docker image rm mbdevpl/usable-ubuntu:latest || :
+	sudo docker image rm mbdevpl/usable-ubuntu:18.10 || :
+	sudo docker image rm mbdevpl/usable-ubuntu:19.04 || :
