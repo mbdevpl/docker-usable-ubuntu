@@ -32,7 +32,7 @@ Container has two users:
 
 Currently supported programming languages:
 
-* C, C++ (GCC 7, LLVM 5.0)
+* C, C++ (GCC 7, LLVM 7)
 * Fortran (GCC 7)
 * Python 3.6
 * Java (Open JDK 9 on 16.04 and 11 on 18.04)
