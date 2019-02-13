@@ -4,7 +4,11 @@ set -Eeuxo pipefail
 UBUNTU_RELEASE="$(lsb_release -rs)"
 UBUNTU_CODENAME="$(lsb_release -cs)"
 
-# texlive
+# usual texlive
+
+# apt install -y texlive biber texlive-music texlive-lang-polish texlive-lang-french texlive-lang-cjk
+
+# texlive from source
 
 dir_prefix="install-tl-"
 archive="install-tl-unx.tar.gz"

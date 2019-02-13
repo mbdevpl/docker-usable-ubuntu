@@ -62,6 +62,7 @@ apt install -y bless # HEX editor
 apt install -y git-gui gitk
 apt install -y doxygen-gui
 apt install -y virtualbox-qt virtualbox-guest-additions-iso virtualbox-ext-pack
+# apt install monodevelop
 
 # travis
 
