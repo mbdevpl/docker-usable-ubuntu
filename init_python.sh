@@ -4,7 +4,7 @@ set -Eeuxo pipefail
 UBUNTU_RELEASE="$(lsb_release -rs)"
 UBUNTU_CODENAME="$(lsb_release -cs)"
 
-# Python 3.6
+# Python 3 (3.6 on 18.04 and 18.10, 3.7 on 19.04)
 
 # apt-get install --no-install-recommends -y libsqlite3-dev tk-dev libgdbm-dev libssl-dev
 # apt-get install --no-install-recommends -y libncurses5-dev libncursesw5-dev libreadline-dev

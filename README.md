@@ -43,7 +43,7 @@ Currently supported programming languages:
 
 * C, C++ (GCC 8, LLVM 7)
 * Fortran (GCC 8)
-* Python 3.6
+* Python 3 (CPython 3.6 on 18.04 and 18.10, CPython 3.7 on 19.04)
 * Java (Open JDK 11)
 
 Not installed by default, but also easily available:

@@ -1,96 +1,108 @@
 #!/bin/bash
 set -Eeuxo pipefail
 
+UBUNTU_RELEASE="$(lsb_release -rs)"
+UBUNTU_CODENAME="$(lsb_release -cs)"
+
 python3 --version
-pip3 --version
+python3 -m pip --version
 
 # essential package support
-pip3 install -U pip setuptools wheel
+# python3 -m pip install -U pip
+python3 -m pip install -U setuptools wheel
 
 # package management packages
-pip3 install twine
-pip3 install pipdeptree
-pip3 install pip-autoremove
+python3 -m pip install twine
+python3 -m pip install pipdeptree
+python3 -m pip install pip-autoremove
 
 # utility / general-purpose packages
-pip3 install colorama
-pip3 install ordered-set
-pip3 install readchar
-pip3 install six
-pip3 install docutils
-pip3 install more-itertools
+python3 -m pip install colorama
+python3 -m pip install ordered-set
+python3 -m pip install readchar
+python3 -m pip install six
+python3 -m pip install docutils
+python3 -m pip install more-itertools
 
 # date/time manipulation packages
-pip3 install python-dateutil
-pip3 install parsedatetime
-pip3 install tzlocal
+python3 -m pip install python-dateutil
+python3 -m pip install parsedatetime
+python3 -m pip install tzlocal
 
 # versioning packages
-pip3 install GitPython
-pip3 install semver
-pip3 install version-query
+python3 -m pip install GitPython
+python3 -m pip install semver
+python3 -m pip install version-query
 
 # debugging
-pip3 install ipdb
-
-# static anlysis packages
-pip3 install mypy
-pip3 install pycodestyle
-pip3 install pylint
-pip3 install flake8
-
-# dynamic analysis packages
-pip3 install coverage
-pip3 install hypothesis
-pip3 install line_profiler
-pip3 install memory_profiler
-
-# io packages
-pip3 install oauthlib
-pip3 install requests
-pip3 install wget
-pip3 install defusedxml
-pip3 install lxml
-
-# sci packages
-pip3 install networkx
-pip3 install pymbolic
-pip3 install sympy
-pip3 install numpy
-pip3 install Bottleneck
-pip3 install scipy
-pip3 install statsmodels
-pip3 install Pillow
-pip3 install matplotlib
-pip3 install tables
-pip3 install pandas
-
-# machine learning packages
-pip3 install scikit-learn
-pip3 install chainer
-pip3 install Keras
+python3 -m pip install ipdb
 
 # code/ast manipulation packages
-pip3 install asttokens
-pip3 install astunparse
-pip3 install loo.py
-pip3 install typed_ast
-pip3 install typed-astunparse
-pip3 install pcpp
-pip3 install pycparser
-pip3 install Cython
-pip3 install numba
-pip3 install Nuitka
+python3 -m pip install asttokens
+python3 -m pip install astunparse
+if [[ "${UBUNTU_RELEASE}" == "18.04" ]] ; then
+  python3 -m pip install loo.py
+fi
+python3 -m pip install typed_ast
+python3 -m pip install typed-astunparse
+python3 -m pip install pcpp
+python3 -m pip install pycparser
+python3 -m pip install Cython
+python3 -m pip install numba
+python3 -m pip install Nuitka
+
+# static anlysis packages
+python3 -m pip install mypy
+python3 -m pip install pycodestyle
+python3 -m pip install pylint
+python3 -m pip install flake8
+
+# dynamic analysis packages
+python3 -m pip install coverage
+python3 -m pip install hypothesis
+if [[ "${UBUNTU_RELEASE}" == "18.04" ]] ; then
+  python3 -m pip install line_profiler
+  python3 -m pip install memory_profiler
+fi
+
+# io packages
+python3 -m pip install oauthlib
+python3 -m pip install requests
+python3 -m pip install wget
+python3 -m pip install defusedxml
+python3 -m pip install lxml
+
+# sci packages
+python3 -m pip install networkx
+python3 -m pip install pymbolic
+python3 -m pip install sympy
+python3 -m pip install numpy
+if [[ "${UBUNTU_RELEASE}" == "18.04" ]] ; then
+  python3 -m pip install Bottleneck
+fi
+python3 -m pip install scipy
+python3 -m pip install statsmodels
+python3 -m pip install Pillow
+python3 -m pip install matplotlib
+if [[ "${UBUNTU_RELEASE}" != "19.04" ]] ; then
+  python3 -m pip install tables
+fi
+python3 -m pip install pandas
+
+# machine learning packages
+python3 -m pip install scikit-learn
+python3 -m pip install chainer
+python3 -m pip install Keras
 
 # geo packages
-pip3 install motionless
-pip3 install haversine
-pip3 install pycountry
+python3 -m pip install motionless
+python3 -m pip install haversine
+python3 -m pip install pycountry
 
 # ipython/jupyter packages
-pip3 install ipython
-pip3 install jupyter
-pip3 install notebook
-pip3 install ipyparallel
+python3 -m pip install ipython
+python3 -m pip install jupyter
+python3 -m pip install notebook
+python3 -m pip install ipyparallel
 
-pip3 freeze
+python3 -m pip freeze
