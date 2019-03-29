@@ -103,6 +103,5 @@ python3 -m pip install pycountry
 python3 -m pip install ipython
 python3 -m pip install jupyter
 python3 -m pip install notebook
-python3 -m pip install ipyparallel
 
 python3 -m pip freeze
