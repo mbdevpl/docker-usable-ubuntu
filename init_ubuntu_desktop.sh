@@ -64,6 +64,12 @@ apt install -y doxygen-gui
 apt install -y virtualbox-qt virtualbox-guest-additions-iso virtualbox-ext-pack
 # apt install monodevelop
 
+# Atom
+
+wget -qO - https://packagecloud.io/AtomEditor/atom/gpgkey | apt-key add -
+sh -c 'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main" > /etc/apt/sources.list.d/atom.list' && apt update
+apt install -y atom
+
 # travis
 
 gem install --user-install travis --no-rdoc --no-ri

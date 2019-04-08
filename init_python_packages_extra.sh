@@ -45,8 +45,8 @@ python3 -m pip install py-trello
 
 # for Atom code editor
 python3 -m ipykernel install --sys-prefix  # --user
-python3 -m pip install python-language-server[all]
-python3 -m pip install fortran-language-server
+python3 -m pip install python-language-server[all]  # ide-python
+python3 -m pip install fortran-language-server  # ide-fortran
 
 python3 -m pip freeze
 jupyter nbextension list
