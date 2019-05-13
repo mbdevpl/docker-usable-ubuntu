@@ -10,6 +10,8 @@ UBUNTU_CODENAME="$(lsb_release -cs)"
 
 apt-get install --no-install-recommends -y software-properties-common
 apt-get install --no-install-recommends -y sudo
+apt-get install --no-install-recommends -y locales
+update-locale LANG=C.UTF-8
 
 #
 # system utilities

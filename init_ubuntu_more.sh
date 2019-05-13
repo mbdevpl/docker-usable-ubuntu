@@ -30,3 +30,4 @@ apt-get install --no-install-recommends -y cmake
 apt-get install --no-install-recommends -y doxygen
 apt-get install --no-install-recommends -y libssl-dev
 apt-get install --no-install-recommends -y libffi-dev
+apt-get install --no-install-recommends -y swig

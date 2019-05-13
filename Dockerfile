@@ -6,6 +6,8 @@ SHELL ["/bin/bash", "--login", "-c"]
 
 ARG APT_MIRROR=us
 
+ENV LANG="C.UTF-8"
+
 USER root
 COPY . /opt/usable-ubuntu
 WORKDIR /opt/usable-ubuntu
@@ -21,6 +23,7 @@ WORKDIR /opt/usable-ubuntu
 RUN bash init_ubuntu_docker.sh && \
   bash init_ubuntu_base.sh && \
   bash init_ubuntu_base_user.sh && \
+  su - user -c mkdir -p "/home/user/.local/bin" && \
   su - user -c "touch /home/user/.bash_history" && \
   su - user -c "git config --global user.email 'ubuntu-user@example.com'" && \
   su - user -c "git config --global user.name 'Ubuntu User'" && \
