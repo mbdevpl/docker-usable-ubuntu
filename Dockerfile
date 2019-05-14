@@ -17,6 +17,7 @@ WORKDIR /opt/usable-ubuntu
 # create user "user"
 # configure git for local usage
 # clear up after apt
+# clear up after pip
 # initialize "root" and "user" bash history
 #
 
@@ -38,6 +39,7 @@ RUN bash init_ubuntu_docker.sh && \
   # bash init_python_packages_extra.sh && \
   apt-get clean && \
   rm -rf /var/lib/apt/lists/* && \
+  rm -rf "/root/.cache/pip" && \
   cat bash_history.sh >> /root/.bash_history && \
   cat bash_history_user.sh >> /home/user/.bash_history
 

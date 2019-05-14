@@ -8,8 +8,8 @@ python3 --version
 python3 -m pip --version
 
 # essential package support
-# python3 -m pip install -U pip
-python3 -m pip install -U setuptools wheel
+python3 -m pip --no-cache-dir install -U --upgrade-strategy=eager pip
+python3 -m pip --no-cache-dir install -U --upgrade-strategy=eager setuptools wheel
 
 # package management packages
 python3 -m pip install twine
