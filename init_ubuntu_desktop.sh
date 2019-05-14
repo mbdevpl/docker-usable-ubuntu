@@ -55,14 +55,26 @@ apt install -y syncthing-gtk
 apt install -y xournal
 apt install -y bless # HEX editor
 
+# CJK fonts
+
+apt-get install --no-install-recommends -y fonts-hanazono
+apt-get install --no-install-recommends -y fonts-horai-umefont
+apt-get install --no-install-recommends -y fonts-kouzan-mouhitsu
+apt-get install --no-install-recommends -y fonts-motoya-l-cedar
+apt-get install --no-install-recommends -y fonts-motoya-l-maruberi
+apt-get install --no-install-recommends -y fonts-motoya-l-maruberi
+apt-get install --no-install-recommends -y fonts-takao
+
 #
 # software development
 #
 
 apt install -y git-gui gitk
+apt-get install --no-install-recommends -y doxygen
 apt install -y doxygen-gui
 apt install -y virtualbox-qt virtualbox-guest-additions-iso virtualbox-ext-pack
 # apt install monodevelop
+apt-get install --no-install-recommends -y swig
 
 # Atom
 
