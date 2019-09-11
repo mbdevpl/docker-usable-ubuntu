@@ -53,6 +53,10 @@ apt-get install -y syncthing-gtk
 #
 
 apt-get install -y xournal
+
+add-apt-repository ppa:andreasbutti/xournalpp-master && apt update
+apt-get install -y xournalpp
+
 apt-get install -y bless # HEX editor
 
 # CJK fonts
