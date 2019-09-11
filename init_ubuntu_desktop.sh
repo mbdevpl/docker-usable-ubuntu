@@ -29,31 +29,31 @@ apt-file update
 # files
 #
 
-apt install -y filezilla
-apt install -y keepassx
+apt-get install -y filezilla
+apt-get install -y keepassx
 
 # Seafile
 
 add-apt-repository ppa:seafile/seafile-client && apt update
-apt install -y seafile-gui
+apt-get install -y seafile-gui
 
 # Syncthing
 
 curl -s https://syncthing.net/release-key.txt | apt-key add -
 add-apt-repository "deb https://apt.syncthing.net/ syncthing release" && apt update
-apt install -y syncthing
+apt-get install -y syncthing
 
 # Syncthing GTK
 
-sudo add-apt-repository ppa:nilarimogard/webupd8 && apt update
-apt install -y syncthing-gtk
+add-apt-repository ppa:nilarimogard/webupd8 && apt update
+apt-get install -y syncthing-gtk
 
 #
 # text, documents
 #
 
-apt install -y xournal
-apt install -y bless # HEX editor
+apt-get install -y xournal
+apt-get install -y bless # HEX editor
 
 # CJK fonts
 
