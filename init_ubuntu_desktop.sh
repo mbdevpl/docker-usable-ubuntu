@@ -9,17 +9,20 @@ UBUNTU_CODENAME="$(lsb_release -cs)"
 
 apt install -y ubuntu-restricted-extras
 
+apt-get install --no-install-recommends -y chromium-browser
+
 #
 # system utilities
 #
 
 apt install -y gparted
 apt install -y synaptic
-apt install -y indicator-cpufreq indicator-keylock indicator-multiload
 apt install -y dconf-editor
-apt install -y gnome-tweak-tool
+apt install -y gnome-tweaks
 apt install -y compizconfig-settings-manager compiz-plugins
 apt install -y psensor
+
+# install "system-monitor" from Ubuntu Software
 
 # apt-file
 
@@ -115,10 +118,8 @@ apt install -y synergy
 # comfort
 #
 
-apt install -y redshift
-
-sudo add-apt-repository ppa:slgobinath/safeeyes && apt update
-apt install -y safeeyes
+add-apt-repository ppa:slgobinath/safeeyes
+apt-get install -y safeeyes
 
 #
 # science
@@ -127,13 +128,18 @@ apt install -y safeeyes
 apt install -y speedcrunch
 
 #
+# study
+#
+
+apt install -y anki
+
+#
 # communication
 #
 
 # Telegram
 
-add-apt-repository ppa:atareao/telegram && apt update
-apt install -y telegram
+apt-get install --no-install-recommends -y telegram-desktop
 
 # Slack
 
