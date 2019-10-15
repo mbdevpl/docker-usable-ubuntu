@@ -13,7 +13,8 @@ apt install -y ubuntu-restricted-extras
 # system utilities
 #
 
-apt install -y gparted synaptic
+apt install -y gparted
+apt install -y synaptic
 apt install -y indicator-cpufreq indicator-keylock indicator-multiload
 apt install -y dconf-editor
 apt install -y gnome-tweak-tool
@@ -61,11 +62,12 @@ apt-get install -y bless # HEX editor
 
 # CJK fonts
 
+apt-get install --no-install-recommends -y fonts-ipafont
+apt-get install --no-install-recommends -y fonts-ipaexfont
 apt-get install --no-install-recommends -y fonts-hanazono
 apt-get install --no-install-recommends -y fonts-horai-umefont
 apt-get install --no-install-recommends -y fonts-kouzan-mouhitsu
 apt-get install --no-install-recommends -y fonts-motoya-l-cedar
-apt-get install --no-install-recommends -y fonts-motoya-l-maruberi
 apt-get install --no-install-recommends -y fonts-motoya-l-maruberi
 apt-get install --no-install-recommends -y fonts-takao
 
@@ -91,7 +93,7 @@ apt install -y devscripts  # linter-checkbashisms
 
 # travis
 
-gem install --user-install travis --no-rdoc --no-ri
+gem install --user-install travis -N
 
 # Docker
 
@@ -150,7 +152,8 @@ add-apt-repository ppa:fossfreedom/rhythmbox-plugins && apt update
 # graphics/video
 #
 
-apt install -y gimp gimp-data-extras
+apt install -y gimp
+apt install -y gimp-data-extras
 apt install -y inkscape
 apt install -y vlc
 
