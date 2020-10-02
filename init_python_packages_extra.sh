@@ -25,7 +25,6 @@ python3 -m pip install Pygments
 # Jupyter notebook extensions
 python3 -m pip install ipyparallel
 python3 -m pip install ipykernel
-python3 -m pip install nbextensions
 python3 -m pip install jupyter_contrib_nbextensions
 python3 -m pip install jupyter_nbextensions_configurator
 python3 -m jupyter contrib nbextension install --sys-prefix  # --user

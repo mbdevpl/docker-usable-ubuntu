@@ -9,8 +9,6 @@ UBUNTU_CODENAME="$(lsb_release -cs)"
 
 apt install -y ubuntu-restricted-extras
 
-apt-get install --no-install-recommends -y chromium-browser
-
 #
 # system utilities
 #
@@ -34,7 +32,7 @@ apt-file update
 #
 
 apt-get install -y filezilla
-apt-get install -y keepassx
+snap install keepassxc
 
 # Seafile
 
@@ -137,13 +135,16 @@ apt install -y anki
 # communication
 #
 
-# Telegram
+# Line
+snap install chromium
+# install "Line" addon
 
 apt-get install --no-install-recommends -y telegram-desktop
 
-# Slack
+# download & install Slack from their website
+# snap has broken Japanese support
 
-snap install slack --classic
+snap install skype
 
 #
 # audio
