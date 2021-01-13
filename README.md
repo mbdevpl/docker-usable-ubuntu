@@ -13,10 +13,10 @@ Currently maintained Docker tags (with corresponding Ubuntu versions):
 
 * [18.04](https://github.com/mbdevpl/docker-usable-ubuntu/tree/18.04)
 * [latest](https://github.com/mbdevpl/docker-usable-ubuntu/tree/latest) is same as `ubuntu:latest` (currently 18.04)
-* [19.04](https://github.com/mbdevpl/docker-usable-ubuntu/tree/19.04)
 
 Tags that are no longer maintained:
 
+* [19.04](https://github.com/mbdevpl/docker-usable-ubuntu/tree/19.04)
 * [18.10](https://github.com/mbdevpl/docker-usable-ubuntu/tree/18.10)
 * [17.10](https://github.com/mbdevpl/docker-usable-ubuntu/tree/17.10)
 * [16.04](https://github.com/mbdevpl/docker-usable-ubuntu/tree/16.04)

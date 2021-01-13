@@ -84,9 +84,7 @@ python3 -m pip install scipy
 python3 -m pip install statsmodels
 python3 -m pip install Pillow
 python3 -m pip install matplotlib
-if [[ "${UBUNTU_RELEASE}" != "19.04" ]] ; then
-  python3 -m pip install tables
-fi
+python3 -m pip install tables
 python3 -m pip install pandas
 
 # machine learning packages
