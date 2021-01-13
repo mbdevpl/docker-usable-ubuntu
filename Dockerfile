@@ -5,6 +5,7 @@ MAINTAINER Mateusz Bysiek <mateusz.bysiek.spam@gmail.com>
 SHELL ["/bin/bash", "--login", "-c"]
 
 ARG APT_MIRROR="us"
+ARG TIMEZONE="Etc/UTC"
 
 ENV LANG="C.UTF-8"
 

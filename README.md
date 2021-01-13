@@ -58,6 +58,22 @@ RUN sudo /opt/usable/ubuntu/refresh_apt_mirror.sh
 ...
 ```
 
+#### Changing timezone
+
+It's controlled via `TIMEZONE` build argument, `UTC` by default.
+
+Change is made by running `/opt/usable/ubuntu/refresh_timezone.sh` in docker build.
+
+```
+FROM mbdevpl/usable-ubuntu:latest
+
+ARG TIMEZONE=Asia/Tokyo
+
+RUN sudo /opt/usable/ubuntu/refresh_timezone.sh
+
+...
+```
+
 
 ### Software development
 
