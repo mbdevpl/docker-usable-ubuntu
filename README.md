@@ -13,7 +13,9 @@ Currently maintained Docker tags (with corresponding Ubuntu versions):
 
 * [latest](https://github.com/mbdevpl/docker-usable-ubuntu/tree/latest) is based on `ubuntu:latest` (currently 20.04)
 * [20.04](https://github.com/mbdevpl/docker-usable-ubuntu/tree/20.04) is based on `ubuntu:20.04`
+* [20.04-cuda](https://github.com/mbdevpl/docker-usable-ubuntu/tree/20.04-cuda) is based on `nvidia/cuda:11.1-devel-ubuntu20.04`
 * [18.04](https://github.com/mbdevpl/docker-usable-ubuntu/tree/18.04) is based on `ubuntu:18.04`
+* [18.04-cuda](https://github.com/mbdevpl/docker-usable-ubuntu/tree/18.04-cuda) is based on `nvidia/cuda:10.2-devel-ubuntu18.04`
 
 Tags that are no longer maintained:
 
