@@ -4,7 +4,7 @@ MAINTAINER Mateusz Bysiek <mateusz.bysiek.spam@gmail.com>
 
 SHELL ["/bin/bash", "--login", "-c"]
 
-ARG APT_MIRROR=us
+ARG APT_MIRROR="us"
 
 ENV LANG="C.UTF-8"
 
@@ -21,7 +21,8 @@ WORKDIR /opt/usable-ubuntu
 # initialize "root" and "user" bash history
 #
 
-RUN bash init_ubuntu_docker.sh && \
+RUN bash refresh_apt_mirror.sh && \
+  bash init_ubuntu_docker.sh && \
   bash init_ubuntu_base.sh && \
   bash init_ubuntu_base_user.sh && \
   su - user -c "mkdir -p '/home/user/.local/bin'" && \

@@ -36,6 +36,28 @@ Container has two users:
 * default user `user` with sudo privileges and no password -- use `sudo su` to become root.
 * `root` -- use `su - user -c something` to execute something as `user`.
 
+### Extensibility
+
+Image is built in a way as to help to build on top of it.
+
+#### Changing apt mirror
+
+It's controlled via `APT_MIRROR` build argument, `us` by default.
+
+Change is made by running `/opt/usable/ubuntu/refresh_apt_mirror.sh` in docker build.
+
+Usage example:
+
+```
+FROM mbdevpl/usable-ubuntu:latest
+
+ARG APT_MIRROR=jp
+
+RUN sudo /opt/usable/ubuntu/refresh_apt_mirror.sh
+
+...
+```
+
 
 ### Software development
 
