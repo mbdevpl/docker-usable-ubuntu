@@ -4,7 +4,7 @@ set -Eeuxo pipefail
 UBUNTU_RELEASE="$(lsb_release -rs)"
 UBUNTU_CODENAME="$(lsb_release -cs)"
 
-# Python 3 (3.6 on 18.04)
+# Python 3 (3.6 on 18.04, 3.8 on 20.04)
 
 # apt-get install --no-install-recommends -y libsqlite3-dev tk-dev libgdbm-dev libssl-dev
 # apt-get install --no-install-recommends -y libncurses5-dev libncursesw5-dev libreadline-dev
@@ -21,7 +21,7 @@ python --version || echo "not available"
 python2 --version || echo "not available"
 python3 --version
 python3.6 --version || echo "not available"
-python3.7 --version || echo "not available"
+python3.8 --version || echo "not available"
 
 # curl https://bootstrap.pypa.io/get-pip.py | python3
 
@@ -29,4 +29,4 @@ pip --version || echo "not available"
 pip2 --version || echo "not available"
 pip3 --version
 pip3.6 --version || echo "not available"
-pip3.7 --version || echo "not available"
+pip3.8 --version || echo "not available"

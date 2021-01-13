@@ -40,9 +40,7 @@ python3 -m pip install ipdb
 # code/ast manipulation packages
 python3 -m pip install asttokens
 python3 -m pip install astunparse
-if [[ "${UBUNTU_RELEASE}" == "18.04" ]] ; then
-  python3 -m pip install loo.py
-fi
+python3 -m pip install loo.py
 python3 -m pip install typed_ast
 python3 -m pip install typed-astunparse
 python3 -m pip install pcpp
@@ -60,10 +58,8 @@ python3 -m pip install flake8
 # dynamic analysis packages
 python3 -m pip install coverage
 python3 -m pip install hypothesis
-if [[ "${UBUNTU_RELEASE}" == "18.04" ]] ; then
-  python3 -m pip install line_profiler
-  python3 -m pip install memory_profiler
-fi
+python3 -m pip install line_profiler
+python3 -m pip install memory_profiler
 
 # io packages
 python3 -m pip install oauthlib
@@ -77,9 +73,7 @@ python3 -m pip install networkx
 python3 -m pip install pymbolic
 python3 -m pip install sympy
 python3 -m pip install numpy
-if [[ "${UBUNTU_RELEASE}" == "18.04" ]] ; then
-  python3 -m pip install Bottleneck
-fi
+python3 -m pip install Bottleneck
 python3 -m pip install scipy
 python3 -m pip install statsmodels
 python3 -m pip install Pillow

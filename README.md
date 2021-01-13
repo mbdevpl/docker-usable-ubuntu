@@ -11,8 +11,9 @@ The image size is a priority too, but the highest priority is ease of developmen
 
 Currently maintained Docker tags (with corresponding Ubuntu versions):
 
-* [18.04](https://github.com/mbdevpl/docker-usable-ubuntu/tree/18.04)
-* [latest](https://github.com/mbdevpl/docker-usable-ubuntu/tree/latest) is same as `ubuntu:latest` (currently 18.04)
+* [latest](https://github.com/mbdevpl/docker-usable-ubuntu/tree/latest) is based on `ubuntu:latest` (currently 20.04)
+* [20.04](https://github.com/mbdevpl/docker-usable-ubuntu/tree/20.04) is based on `ubuntu:20.04`
+* [18.04](https://github.com/mbdevpl/docker-usable-ubuntu/tree/18.04) is based on `ubuntu:18.04`
 
 Tags that are no longer maintained:
 
@@ -81,7 +82,7 @@ Currently supported programming languages:
 
 * C, C++ (GCC 8, LLVM 7)
 * Fortran (GCC 8)
-* Python 3 (CPython 3.6 on 18.04 and 18.10, CPython 3.7 on 19.04)
+* Python 3 (CPython 3.6 on 18.04, CPython 3.8 on 20.04)
 * Java (Open JDK 11)
 
 Not installed by default, but also easily available:
