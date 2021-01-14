@@ -56,7 +56,9 @@ FROM mbdevpl/usable-ubuntu:latest
 
 ARG APT_MIRROR=jp
 
-RUN sudo /opt/usable/ubuntu/refresh_apt_mirror.sh
+USER root
+
+RUN /opt/usable/ubuntu/refresh_apt_mirror.sh
 
 ...
 ```
@@ -72,7 +74,9 @@ FROM mbdevpl/usable-ubuntu:latest
 
 ARG TIMEZONE=Asia/Tokyo
 
-RUN sudo /opt/usable/ubuntu/refresh_timezone.sh
+USER root
+
+RUN /opt/usable/ubuntu/refresh_timezone.sh
 
 ...
 ```
