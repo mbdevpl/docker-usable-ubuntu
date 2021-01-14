@@ -82,7 +82,7 @@ RUN sudo /opt/usable/ubuntu/refresh_timezone.sh
 
 Currently supported programming languages:
 
-* C, C++ (GCC 8, LLVM 7)
+* C, C++ (GCC 8, LLVM 10)
 * Fortran (GCC 8)
 * Python 3 (CPython 3.6 on 18.04, CPython 3.8 on 20.04)
 * Java (Open JDK 11)
